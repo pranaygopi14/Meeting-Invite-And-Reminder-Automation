@@ -1,0 +1,6 @@
+{
+  "Name": "Automaters",
+  "ProjectType": "Process",
+  "Description": "Automating Meeting Invites and Reminders with UiPath",
+  "MainFile": "Main.xaml"
+}

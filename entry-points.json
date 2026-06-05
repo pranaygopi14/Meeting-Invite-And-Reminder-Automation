@@ -1,0 +1,68 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "f670751f-59f3-4c6c-abad-cfbec4b2bbdb",
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "reminderLogRow": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "currentRow": {
+            "type": "object",
+            "properties": {
+              "RowError": {
+                "type": "string"
+              },
+              "RowState": {
+                "enum": [
+                  "Detached",
+                  "Unchanged",
+                  "Added",
+                  "Deleted",
+                  "Modified"
+                ],
+                "readOnly": true
+              },
+              "Table": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                },
+                "readOnly": true
+              },
+              "ItemArray": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "HasErrors": {
+                "type": "boolean",
+                "readOnly": true
+              }
+            }
+          }
+        },
+        "required": []
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "reminderLogRow": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  ]
+}
